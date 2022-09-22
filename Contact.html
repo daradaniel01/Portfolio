@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
-<body style="scroll-behavior: smooth;">
+<body style="scroll-behavior: smooth;" >
     <nav style="position: fixed; z-index: 5; ">
         <div class="logo" style="overflow: auto;"><br>
            
@@ -35,20 +35,20 @@
                 <form method="post" style="padding-left: 100px; padding-right: 100px;">
                   <div class="form-group">
                     <div class="fa fa-user"></div>
-                    <input type="text" name="name" id="" placeholder="Enter your name " required>
+                    <input type="text" name="name" id="name" placeholder="Enter your name " required>
                   </div>
                   <div class="form-group">
                     <div class="fa fa-mobile"></div>
                     <div class="">+234</div>
-                    <input type="number" name="tel" id="" placeholder="Enter Mobile Number" required>
+                    <input type="number" name="tel" id="tel" placeholder="Enter Mobile Number" required>
                 </div>
                   <div class="form-group">
                     <div class="fa fa-envelope"></div>
-                    <input type="email" name="email" id="" placeholder="doe@example.com " required>
+                    <input type="email" name="email" id="email" placeholder="doe@example.com " required>
                   </div>
                   <div class="form-group">
                     <div class="fa fa-send"></div>
-                    <textarea type="text" name="message" id="" placeholder="Message" required></textarea>
+                    <textarea type="text" name="message" id="message" placeholder="Message" required></textarea>
                   </div>
             
                   <div class="" style="display: flex; justify-content: center;">
@@ -82,12 +82,12 @@
             </div>
             <script src="https://smtpjs.com/v3/smtp.js">
             </script>
-
+            
             <script>
               const btn = document.getElementById('btn');
               btn.addEventListener('click',function(e){
                 e.preventDefault()
-  
+            
                  var name = document.getElementById('name').value;
                 var phone = document.getElementById('tel').value;
             var email = document.getElementById('email').value;
@@ -103,11 +103,9 @@
                }).then(
               message => alert("Your message was sent successfully")
               );
-
+            
               })
-
+            
             </script>
-
-
 </body>
 </html>
