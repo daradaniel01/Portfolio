@@ -32,7 +32,7 @@
             
             <div style=" padding-left: 30px; " class="title"><h4 style="color:  #09356e;">Here to make an offer?</h4></div><br>
             
-                <form action="get" style="padding-left: 100px; padding-right: 100px;">
+                <form method="post" style="padding-left: 100px; padding-right: 100px;">
                   <div class="form-group">
                     <div class="fa fa-user"></div>
                     <input type="text" name="name" id="" placeholder="Enter your name " required>
@@ -52,10 +52,43 @@
                   </div>
             
                   <div class="" style="display: flex; justify-content: center;">
-                    <input type="submit" value="Send" class="submit">
+                    <input type="submit" value="Send" class="submit" id="btn" >
                   </div><br>
                 
                 </form><br>
+                <script src="https://smtpjs.com/v3/smtp.js">
+                </script>
+
+                <script>
+                  const btn = document.getElementById('btn');
+                  btn.addEventListener('click',function(e){
+                    e.preventDefault()
+      
+                     var name = document.getElementById('name').value;
+                    var phone = document.getElementById('tel').value;
+                var email = document.getElementById('email').value;
+                var message = document.getElementById('message').value;
+                   var body = "Name: " + name +"<br/> Phone: " + tel + "<br/> Email: "+ email +"Message: " + message;
+                   Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "daradanie.07@gmail.com",
+                    Password : "bxrnbnqbgpuaprea",
+                    To :"daradanie.07@gmail.com" ,
+                    From : email,
+                    Body : body
+                   }).then(
+                  message => alert("Your message was sent successfully")
+                  );
+
+                  })
+
+                </script>
+
+
+
+
+
+
                 
               </div><br>
             <div id="frd" style="font-weight:800; background-color: #08456e; color: white; padding-left: 50px; padding-bottom: 14px; width: 100%;">
