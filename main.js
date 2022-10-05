@@ -1,3 +1,20 @@
+var body=document.querySelector('body')
+var button=document.querySelector('button')
+var count=0
+button.addEventListener('click', function (){
+    if(count==0){
+        body.style.color='black'
+        body.style.backgroundColor='white'
+
+        count=1
+        return;
+    }
+    body.style.color='white'
+    body.style.backgroundColor='black'
+    count=0
+    return;
+})
+
 var diaILines = document.getElementsByClassName('diallines');
 var clockEI = document.getElementsByClassName('clock')[0];
 for (var i = 1; i < 60; i++){
