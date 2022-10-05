@@ -424,3 +424,21 @@ span{
     cursor: pointer;
 
 }
+.ok{
+    background-color: #032963;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 10px;
+    border: none;
+    color: #ccc;
+    border-radius: 30px;
+    font-weight: 800;
+}
+.ok:hover{
+   background-color: #ccc;
+   color: #032963;
+}
+a:hover{
+    color: #032963;
+}
