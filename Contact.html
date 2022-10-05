@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danie</title>
+    <link class="log" rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
@@ -32,7 +33,7 @@
             
             <div style=" padding-left: 30px; " class="title"><h4 style="color:  #09356e;">Here to make an offer?</h4></div><br>
             
-                <form method="post" style="padding-left: 100px; padding-right: 100px;">
+                <form id="signup-form" method="post" action="https://formsubmit.co/daradanie.07@gmail.com" style="padding-left: 100px; padding-right: 100px;">
                   <div class="form-group">
                     <div class="fa fa-user"></div>
                     <input type="text" name="name" id="name" placeholder="Enter your name " required>
@@ -54,15 +55,15 @@
                   <div class="" style="display: flex; justify-content: center;">
                     <input type="submit" value="Send" class="submit" id="btn" >
                   </div><br>
-                
+                  <div class="status"></div>
+                  <input type="hidden" name="_next" value="Contact.html">
+                  <input type="hidden" name="_subject" value="New Submission!">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_autoresponse" value="We have received your mail, we will get back to you shortly.">
+                  <input type="hidden" name="_template" value="table">
                 </form><br>
-           
-
-
-
-
-                
               </div><br>
+             
             <div id="frd" style="font-weight:800; background-color: #08456e; color: white; padding-left: 50px; padding-bottom: 14px; width: 100%;">
                 <h1 style="padding-top: 30px; color: #9fd0ee; ">Contact information</h1><br>
                    <p>1 peace park,</p>
@@ -80,7 +81,7 @@
                    <a href="mailto:daradanie.07@gmail.com"><i style="color:white; font-size: 20px; cursor: pointer;" class="fa fa-send"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
                    </div>
             </div>
-            <script src="https://smtpjs.com/v3/smtp.js">
+            <!-- <script src="https://smtpjs.com/v3/smtp.js">
             </script>
             
             <script>
@@ -90,8 +91,8 @@
             
                  var name = document.getElementById('name').value;
                 var phone = document.getElementById('tel').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
+               var email = document.getElementById('email').value;
+                var message = document.getElementById('message').value;
                var body = "Name: " + name +"<br/> Phone: " + tel + "<br/> Email: "+ email +"Message: " + message;
                Email.send({
                 Host : "smtp.gmail.com",
@@ -106,6 +107,6 @@
             
               })
             
-            </script>
+            </script> -->
 </body>
 </html>
