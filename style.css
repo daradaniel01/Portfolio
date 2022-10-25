@@ -5,6 +5,8 @@
     box-sizing: border-box;
     font-family:'poppins',sans-serif ;
 }
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -118,7 +120,7 @@ nav ul li a.active,
             border-bottom: none;
             padding-bottom: 0px;
 
-        }
+        } 
         .social{
             display: flex;
             justify-content: left;
@@ -130,21 +132,59 @@ nav ul li a.active,
         #imr{
             display: none;
         }
+        #test{
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+            
+        }
+        #servi{
+            display: block;
+            margin-left: 13px;
+            margin-right: 13px;
+            margin-bottom: 30px;
+        }
+        #imgg{
+            display: inline;
+        }
         #about{
-            padding-left: 50px;
-            padding-right: 50px;
+            margin-left: 7px;
+            margin-right: 7px;
             
         }
         #skill{
-            padding-left: 40px;
-            padding-right: 40px;
+            margin-left: 7px;
+            margin-right: 7px;
+            
+        }
+        #s{
+            margin-bottom: 30px;
+        }
+        #o{
+            margin-bottom: 30px;
+        }
+        #ss{
+            margin-bottom: 30px;
+        }
+        #ovee{
+            display: grid;
+            
+           place-content: center;
+        }
+        #testi{
+            margin-left: 6px;
+            margin-right: 6px;
         }
         #frd{
             width: 70%;
             padding: 0px;
             background-color: chartreuse;
         }
-       
+        #ove{
+            display: block;
+        }
+    } 
+    .over{
+        display:flex ; gap: 50px; justify-content: center;
     }
  
   .title {
@@ -455,4 +495,60 @@ a:hover{
     color: #fff;
     border-radius: 20px;
     border: none;
+}
+.work{
+    text-align: center;
+}
+.ovee{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.cmca{
+  
+    text-align: center;
+    color: #fff;
+    background-image:linear-gradient(to bottom, rgba(7, 7, 7, 0.918), rgba(0, 0, 0, 0.945)), url("Group\ 26.png");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 350px;
+    background-position: center;
+}
+.E-tech{
+  
+    text-align: center;
+    color: #fff;
+    background-image:linear-gradient(to bottom, rgba(7, 7, 7, 0.918), rgba(0, 0, 0, 0.945)), url("Group\ 26.png");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 350px;
+    background-position: center;
+}
+.cmca{
+  
+    text-align: center;
+    color: #fff;
+    background-image:linear-gradient(to bottom, rgba(7, 7, 7, 0.918), rgba(0, 0, 0, 0.945)), url("Group\ 31.png");
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 350px;
+    background-position: center;
+}
+.imgg{
+    display: none;
+}
+.servi{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
 }
